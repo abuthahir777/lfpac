@@ -64,13 +64,16 @@ class Contact extends CI_Controller
 
  
 
-        if ($status['success']) {
+        if ($status['success'])
+        {
 
             $this->Contact_Model->save();
             $this->session->set_flashdata('send', 'Message Successfully Send');
             header("Location:".$this->config->item('base_url')."/contact");
 
-        }else{
+        }
+        else
+        {
 
             $this->session->set_flashdata('flashError', 'Sorry Google Recaptcha Unsuccessful!!');
         	header("Location:".$this->config->item('base_url')."/contact");

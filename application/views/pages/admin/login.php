@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Login</title>
+  <title>LFPAC Admin Login</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url('assets/admin/');?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,7 +51,7 @@
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
                       </div>
                     </div>
-                    <small class="mb-4"><?php if($this->session->flashdata('error')){ echo $this->session->flashdata('error') ;}?></small>
+                    <div class="form-group"><center><small class="mb-4"><?php if($this->session->flashdata('error')){ echo $this->session->flashdata('error') ;}?></small></center></div>
                     <input type="submit" name="login" id="login" value="Login" class="btn btn-primary btn-user btn-block">
 <!--                     <hr> -->
 <!--                     <a href="index.html" class="btn btn-google btn-user btn-block">
