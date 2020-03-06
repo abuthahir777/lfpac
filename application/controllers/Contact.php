@@ -75,8 +75,8 @@ class Contact extends CI_Controller
         else
         {
 
-            $this->session->set_flashdata('flashError', 'Sorry Google Recaptcha Unsuccessful!!');
-        	header("Location:".$this->config->item('base_url')."/contact");
+         //    $this->session->set_flashdata('flashError', 'Sorry Google Recaptcha Unsuccessful!!');
+        	// header("Location:".$this->config->item('base_url')."/contact");
 
         }
 
